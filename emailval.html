@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <input type="text" id="email" placeholder="Enter your Email(chmeenakshi722@gmail.com)">
+        <p id="message"></p>
+        <script>
+            let pan=document.getElementById("pan");
+            email.addEventListener(input,function(){
+            let str=email.value.toLowerCase();
+            const emailregex=/^[a-z]{11}[0-9]{3}{@}
+             if(emailregex.test(str)){
+                        document.getElementById("message").innerHTML="Valid email";
+                        document.getElementById("message").style="color:green";
+                    }
+                    else{
+                        document.getElementById("message").innerHTML="Invalid email";
+                        document.getElementById("message").style="color:red";
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>
